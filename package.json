@@ -1,0 +1,22 @@
+{
+  "name": "25-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "envFichero.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elMestreAcademy/25-env.git"
+  },
+  "author": "Carlos Mestre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elMestreAcademy/25-env/issues"
+  },
+  "homepage": "https://github.com/elMestreAcademy/25-env#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
