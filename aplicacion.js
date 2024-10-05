@@ -1,9 +1,11 @@
 const fs = require('node:fs');
+const path = require('path')
+
 
 let ejemploFichero = (content) => {
 
     let directorioHome = process.env.HOME || process.env.HOMEPATH 
-    let ruta = `${directorioHome}/test.txt`
+    let ruta = `${directorioHome}${path.sep}test.txt`
 
     fs.writeFile(ruta, content, err => {
         if (err) {
