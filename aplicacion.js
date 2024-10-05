@@ -1,6 +1,18 @@
-let saluda = () => {
-    let nombre = process.env.USER || process.env.USERNAME 
-    console.log(`Hola ${nombre}`)
+const fs = require('node:fs');
+
+let ejemploFichero = (content) => {
+
+    let directorioHome = process.env.HOME || process.env.HOMEPATH 
+    let ruta = `${directorioHome}/test.txt`
+
+    fs.writeFile(ruta, content, err => {
+        if (err) {
+          console.error(err);
+        } else {
+          // file written successfully
+          console.log(`Archivo Guardado en ${ruta}`)
+        }
+      });
 }
 
-saluda()
+ejemploFichero("Contenido del fichero")
